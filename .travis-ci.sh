@@ -1,17 +1,6 @@
 # Edit this for your own project dependencies
 OPAM_DEPENDS="ocamlfind ounit dune"
 
-case "$OCAML_VERSION,$OPAM_VERSION" in
-3.12.1,1.0.0) ppa=avsm/ocaml312+opam10 ;;
-3.12.1,1.1.0) ppa=avsm/ocaml312+opam11 ;;
-4.00.1,1.0.0) ppa=avsm/ocaml40+opam10 ;;
-4.00.1,1.1.0) ppa=avsm/ocaml40+opam11 ;;
-4.01.0,1.0.0) ppa=avsm/ocaml41+opam10 ;;
-4.01.0,1.1.0) ppa=avsm/ocaml41+opam11 ;;
-4.07.1,2.0.2) ppa=avsm/ocaml47+opam20 ;;
-*) echo Unknown $OCAML_VERSION,$OPAM_VERSION; exit 1 ;;
-esac
-
 sudo apt-get update -qq
 sudo apt-get install -qq ocaml opam
 export OPAMYES=1
