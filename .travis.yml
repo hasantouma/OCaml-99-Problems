@@ -1,7 +1,2 @@
     language: c
     script: bash -ex .travis-ci.sh
-    env:
-      - OCAML_VERSION=4.07.1 OPAM_VERSION=2.0.2
-    notifications:
-      email:
-        - hasantouma@gmail.com
